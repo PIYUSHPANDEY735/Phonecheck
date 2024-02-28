@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Form</h1>
+  <form id="myForm" action="https://youtube.com" method="get">
+
+    <label for="phone">Phone Number: With Tel</label>
+    <input type="tel" id="phone" name="phone"  placeholder="Enter Phone Number"><br><br>
+
+      <label for="phone">Phone Number: Without Tel</label>
+    <input type="text" name="phone" inputmode="numeric" minlength="10" maxlength="10" placeholder="Enter Phone Number"/><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+<!--  <script>
+          function validatePhone() {
+        // Get the phone number input field
+        var phoneNumber = document.getElementById("phone").value;
+
+        // Remove any non-numeric characters
+        var numericPhoneNumber = phoneNumber.replace(/\D/g, '');
+
+        // Check if the entered value is different from the numeric value
+        if (phoneNumber !== numericPhoneNumber) {
+            // Alert the user if non-numeric characters are present
+            alert("Please enter only numeric characters for the phone number.");
+            return false; // Prevent form submission
+        }
+        return true; // Allow form submission if the input contains only numeric characters
+    }
+    </script> -->
+</body>
+</html>
